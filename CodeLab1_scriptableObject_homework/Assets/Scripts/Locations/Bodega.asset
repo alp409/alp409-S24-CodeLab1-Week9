@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62c3aa045459c64409f9536fdcfa993b, type: 3}
-  m_Name: Home
+  m_Name: Bodega
   m_EditorClassIdentifier: 
-  locationName: Home
-  locationDesc: B & A & P
-  north: {fileID: 11400000, guid: bbf279f9d7bb61c419758baa9f3c3ab6, type: 2}
-  south: {fileID: 11400000, guid: e432666bf5c87fd4d82eab806bfe8844, type: 2}
-  east: {fileID: 0}
+  locationName: Bodega
+  locationDesc: S.E.C. with S&P.  B&W Cookie.
+  north: {fileID: 0}
+  south: {fileID: 0}
+  east: {fileID: 11400000, guid: e432666bf5c87fd4d82eab806bfe8844, type: 2}
   west: {fileID: 0}

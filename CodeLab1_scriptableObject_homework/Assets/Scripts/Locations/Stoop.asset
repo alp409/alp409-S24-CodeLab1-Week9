@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62c3aa045459c64409f9536fdcfa993b, type: 3}
-  m_Name: Home
+  m_Name: Stoop
   m_EditorClassIdentifier: 
-  locationName: Home
-  locationDesc: B & A & P
-  north: {fileID: 11400000, guid: bbf279f9d7bb61c419758baa9f3c3ab6, type: 2}
-  south: {fileID: 11400000, guid: e432666bf5c87fd4d82eab806bfe8844, type: 2}
-  east: {fileID: 0}
-  west: {fileID: 0}
+  locationName: Stoop
+  locationDesc: Pavement and doggos. Trash bags.
+  north: {fileID: 11400000, guid: 76cc29ba0e3c25c42adcd16f78cdbae5, type: 2}
+  south: {fileID: 0}
+  east: {fileID: 11400000, guid: 213f44de897be324f913a43d258cb98d, type: 2}
+  west: {fileID: 11400000, guid: bfda47697c4ca7c4ba259b86f94dee8b, type: 2}
