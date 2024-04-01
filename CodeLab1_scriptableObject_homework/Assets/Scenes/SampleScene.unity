@@ -154,7 +154,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titleUI: {fileID: 425411197}
   descriptionUI: {fileID: 1897916739}
-  currentLocation: {fileID: 0}
+  currentLocation: {fileID: 11400000, guid: 76cc29ba0e3c25c42adcd16f78cdbae5, type: 2}
+  buttonNorth: {fileID: 1312881375}
+  buttonSouth: {fileID: 238550384}
+  buttonEast: {fileID: 1716491972}
+  buttonWest: {fileID: 1261992476}
 --- !u!4 &93750636
 Transform:
   m_ObjectHideFlags: 0
