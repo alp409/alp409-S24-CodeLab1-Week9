@@ -155,10 +155,12 @@ MonoBehaviour:
   titleUI: {fileID: 425411197}
   descriptionUI: {fileID: 1897916739}
   currentLocation: {fileID: 11400000, guid: 76cc29ba0e3c25c42adcd16f78cdbae5, type: 2}
+  item: {fileID: 0}
   buttonNorth: {fileID: 1312881375}
   buttonSouth: {fileID: 238550384}
   buttonEast: {fileID: 1716491972}
   buttonWest: {fileID: 1261992476}
+  buttonItem: {fileID: 207722075}
 --- !u!4 &93750636
 Transform:
   m_ObjectHideFlags: 0
@@ -211,7 +213,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -70}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 117.8, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &207722075
 MonoBehaviour:

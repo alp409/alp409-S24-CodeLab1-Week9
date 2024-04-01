@@ -20,6 +20,8 @@ public class LocationScriptableObject : ScriptableObject
     public LocationScriptableObject south;
     public LocationScriptableObject east;
     public LocationScriptableObject west;
+
+    public ItemScriptableObject item;
     
     // print a string of our locaiton and description in the console
     public void PrintLocation()
@@ -27,10 +29,10 @@ public class LocationScriptableObject : ScriptableObject
         string printStr = "\nLocation Name: " + locationName +
                           "\nLocation Description: " + locationDesc;
     
-        Debug.Log(printStr);
+        //Debug.Log(printStr);
     }
 
-    // always update the text UI for location and description (in the game manager) to our current locaiton
+    // always update the text UI for location and description (in the game manager) to our current location
     public void UpdateCurrentLocation(GameManager gm)
     {
         gm.titleUI.text = locationName;

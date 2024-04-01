@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -10,6 +11,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI descriptionUI;
 
     public LocationScriptableObject currentLocation;
+    public LocationScriptableObject item;
     
     // public ItemScriptableObject inventory;
 
@@ -17,12 +19,31 @@ public class GameManager : MonoBehaviour
     public Button buttonSouth;
     public Button buttonEast;
     public Button buttonWest;
+
+    public Button buttonItem;
     
     // Start is called before the first frame update
     void Start()
     {
         currentLocation.PrintLocation();
         currentLocation.UpdateCurrentLocation(this);
+        
+        //buttonItem.UpdateInventory(this);
+    }
+
+    private void Update()
+    {
+        
+    }
+
+    public void AddItem(string itemTitle)
+    {
+        switch (itemTitle)
+        {
+            case "Breakfast Sandwich":
+                // activate sprite
+                break;
+        }
     }
 
     public void MoveDir(string dirChar)
@@ -47,5 +68,7 @@ public class GameManager : MonoBehaviour
         }
         
         currentLocation.UpdateCurrentLocation(this);
+        
+        
     }
 }
