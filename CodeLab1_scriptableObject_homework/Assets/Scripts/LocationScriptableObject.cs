@@ -36,7 +36,55 @@ public class LocationScriptableObject : ScriptableObject
         gm.titleUI.text = locationName;
         gm.descriptionUI.text = locationDesc;
         
+        // check if there is a location to the north, south, east, and west
+        // if not, turn off that button so that it can't be pressed, else turn it back on 
         
+        // ALSO set the location "behind" (ie south to north, east to west) to location "this"
+        // this will help automatically populate the map locations in relation to each other
+        
+        // NORTH
+        if (north == null)
+        {
+            gm.buttonNorth.gameObject.SetActive(false);
+        }
+        else
+        {
+            gm.buttonNorth.gameObject.SetActive(true);
+            north.south = this;
+        }
+
+        // SOUTH
+        if (south == null)
+        {
+            gm.buttonSouth.gameObject.SetActive(false);
+        }
+        else
+        {
+            gm.buttonSouth.gameObject.SetActive(true);
+            south.north = this;
+        }
+        
+        // EAST
+        if (east == null)
+        {
+            gm.buttonEast.gameObject.SetActive(false);
+        }
+        else
+        {
+            gm.buttonEast.gameObject.SetActive(true);
+            east.west = this;
+        }
+
+        // WEST
+        if (west == null)
+        {
+            gm.buttonWest.gameObject.SetActive(false);
+        }
+        else
+        {
+            gm.buttonWest.gameObject.SetActive(true);
+            west.east = this;
+        }
     }
 }
 
