@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI descriptionUI;
 
     public LocationScriptableObject currentLocation;
+    
+    // public ItemScriptableObject inventory;
 
     public Button buttonNorth;
     public Button buttonSouth;
